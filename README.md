@@ -3,14 +3,13 @@
 ## Usage
 
 ```javascript
-const xml = '...'; // my BPMN 2.0 xml
+const process = '...';
 const viewer = new BpmnJS({
   container: 'body'
 });
 
 try {
-  const { warnings } = await viewer.importXML(xml);
-
+  const { warnings } = await viewer.importProcess(process);
   console.log('rendered');
 } catch (err) {
   console.log('error rendering', err);
