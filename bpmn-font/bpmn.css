@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'bpmn';
+  src: url('./font/iconfont.eot');
+  src: url('./font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('./font/iconfont.woff2') format('woff2'),
+      url('./font/iconfont.woff') format('woff'),
+      url('./font/iconfont.ttf') format('truetype'),
+      url('./font/iconfont.svg#iconfont') format('svg');
+}
+
+[class^="bpmn-icon-"]:before, [class*=" bpmn-icon-"]:before {
+  font-family: "bpmn";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+
+  font-variant: normal;
+  text-transform: none;
+
+  line-height: 1em;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bpmn-icon-lasso-tool:before {
+  content: "\e6ac";
+}
+
+.bpmn-icon-exclusive-gateway:before {
+  content: "\ec07";
+}
+
+.bpmn-icon-start-event:before {
+  content: "\e626";
+}
+
+.bpmn-icon-end-event:before {
+  content: "\e60d";
+}
+
+.bpmn-icon-trash:before {
+  content: "\e619";
+}
+
+.bpmn-icon-annotation:before {
+  content: "\e634";
+}
+
+.bpmn-icon-user-task:before {
+  content: "\e67c";
+}
+
+.bpmn-icon-connect:before {
+  content: "\e60f";
+}

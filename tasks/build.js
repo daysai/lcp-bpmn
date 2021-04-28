@@ -9,7 +9,6 @@ var exec = require('execa').sync,
 
 var dest = process.env.DISTRO_DIST || 'dist';
 
-
 function resolve(module, sub) {
   var pkg = require.resolve(module + '/package.json');
 
@@ -23,7 +22,7 @@ console.log('mkdir -p ' + dest);
 mkdirp(dest);
 
 console.log('copy bpmn-font to ' + dest + '/bpmn-font');
-cp(resolve('bpmn-font', '/dist/{font,css}/**'), dest + '/assets/bpmn-font');
+cp('bpmn-font/**', dest + '/assets/bpmn-font');
 
 console.log('copy diagram-js.css to ' + dest);
 cp(resolve('diagram-js', '/assets/**'), dest + '/assets');
