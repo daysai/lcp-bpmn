@@ -4,7 +4,8 @@
   "description": "A bpmn 2.0 toolkit and web modeler",
   "scripts": {
     "lint": "eslint .",
-    "build": "node tasks/build.js"
+    "build": "node tasks/build.js",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
